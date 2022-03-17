@@ -2,9 +2,9 @@
   position: absolute;
   width: 375px;
   height: 92px;
-  left: 0px;
-  top: 0px;
-  background-color: #3C3A39;
+  left: 0;
+  top: 0;
+  background-color: #3c3a39;
 }
 
 .clock {
@@ -15,12 +15,11 @@
   line-height: 16px;
   text-align: left;
   letter-spacing: -0.28px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 10px;
   padding-left: 20px;
   width: 54px;
   height: 16px;
-  
 }
 
 .status {
@@ -42,11 +41,11 @@
   line-height: 24px;
   display: flex;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
   padding-top: 10px;
 }
 
@@ -60,11 +59,10 @@
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   position: absolute;
   width: 375px;
   height: 590px;
-  left: 0px;
+  left: 0;
   top: 92px;
   background-color: #1c1a19;
   justify-content: center;
@@ -76,7 +74,7 @@
   height: 124px;
   left: 24px;
   top: 120px;
-  color: #FF6B00;
+  color: #ff6b00;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -86,8 +84,8 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 12px 0px;
-} 
+  margin: 12px 0;
+}
 
 .profession {
   height: 27px;
@@ -99,13 +97,13 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  color: #FFF5E1;
+  color: #fff5e1;
   display: flex;
   align-items: center;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .description {
@@ -116,27 +114,27 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   line-height: 24px;
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .social {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 200px;
   height: 40px;
   top: 430px;
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
   justify-content: space-around;
   align-self: flex-start;
   padding-left: 24px;
@@ -150,7 +148,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .icon2 {
@@ -161,7 +159,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .icon3 {
@@ -172,7 +170,7 @@
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .icon4 {
@@ -183,7 +181,7 @@
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .icon5 {
@@ -194,7 +192,7 @@
   flex: none;
   order: 4;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .ilustration {
