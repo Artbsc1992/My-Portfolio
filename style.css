@@ -1,36 +1,21 @@
-.status-bar {
+.tool-bar {
   position: absolute;
-  width: 375px;
-  height: 92px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 425px;
+  height: 48px;
   left: 0;
   top: 0;
   background-color: #3c3a39;
 }
 
-.clock {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: left;
-  letter-spacing: -0.28px;
-  color: #fff;
-  padding-top: 10px;
-  padding-left: 20px;
-  width: 54px;
-  height: 16px;
-}
-
-.status {
-  float: right;
-  width: 66.66px;
-  height: 11.34px;
-  padding-right: 20px;
+a {
+  text-decoration: none;
 }
 
 .name {
-  width: 77px;
+  width: 150px;
   height: 24px;
   left: 12px;
   top: 10px;
@@ -46,27 +31,38 @@
   order: 0;
   flex-grow: 0;
   margin: 0 0;
-  padding-top: 10px;
+  padding-right: 100px;
 }
 
-.dropdown {
-  float: right;
-  width: 40px;
-  height: 40px;
-  padding-right: 19px;
+.hamburguer {
+  display: block;
+  cursor: pointer;
+  background-color: #3c3a39;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 375px;
+  width: 425px;
   height: 590px;
   left: 0;
-  top: 92px;
+  top: 48px;
   background-color: #1c1a19;
   justify-content: center;
   align-items: center;
+  background-image: url(Img/design.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-position-y: 125%;
 }
 
 .hello {
@@ -124,30 +120,31 @@
 }
 
 .social {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 0;
-  width: 200px;
+  width: 300px;
   height: 40px;
-  top: 430px;
-  flex: none;
+  display: inline;
   order: 3;
-  flex-grow: 0;
-  margin: 12px 0;
-  justify-content: space-around;
-  align-self: flex-start;
-  padding-left: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+.social-media li{
+  display: inline;
+  padding-right: 15px;
+}
+
+.social-media {
+  padding: 0;
 }
 
 .icon1 {
-  left: 20%;
+  left: 50%;
   right: 20%;
   top: 20%;
   bottom: 20%;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 0 0;
 }
 
@@ -156,9 +153,6 @@
   right: 20%;
   top: 20%;
   bottom: 20%;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 0 0;
 }
 
@@ -167,9 +161,6 @@
   right: 20%;
   top: 20%;
   bottom: 20%;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
   margin: 0 0;
 }
 
@@ -178,9 +169,6 @@
   right: 20%;
   top: 20%;
   bottom: 20%;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
   margin: 0 0;
 }
 
@@ -189,15 +177,7 @@
   right: 20%;
   top: 20%;
   bottom: 20%;
-  flex: none;
-  order: 4;
-  flex-grow: 0;
   margin: 0 0;
 }
 
-.ilustration {
-  position: absolute;
-  left: 64.74%;
-  top: 53.3%;
-  bottom: -11.63%;
-}
+
