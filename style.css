@@ -193,16 +193,13 @@ ul {
   padding-bottom: 20px;
   width: 425px;
   text-align: center;
+  padding-top: 120px;
 }
 
 .grid1 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.work-title {
-  padding-top: 120px;
 }
 
 #work-title {
@@ -227,16 +224,15 @@ ul {
   margin-bottom: 0;
 }
 
-.list-1{
+.list-1 {
   display: flex;
-
 }
 
 .tags1 {
   padding-left: 20px;
 }
 
-.flex1{
+.flex1 {
   display: inline;
   border: 1px solid #000;
   padding: 10px;
@@ -318,7 +314,7 @@ ul {
 }
 
 .button2 {
-  position:relative;
+  position: relative;
   text-align: center;
 }
 
@@ -329,14 +325,14 @@ ul {
   font-weight: bold;
   padding-left: 127px;
   padding-right: 127px;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  border-top-width: 0px;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
   margin-right: 10px;
   padding-top: 9px;
   padding-bottom: 9px;
   margin-top: 8px;
-  border-bottom-width: 0px;
+  border-bottom-width: 0;
 }
 
 .card3 {
@@ -374,7 +370,7 @@ ul {
 }
 
 #p3-text {
-  color: #fff;
+  color:#fff;
   font-family: 'Poppins', sans-serif;
   text-align: left;
   width: 300px;
@@ -396,29 +392,29 @@ ul {
   padding: 10px;
   margin-right: 10px;
   color: #fff;
-  background-color:rgba(255, 255, 255, 0.24); ;
+  background-color:rgba(255, 255, 255, 0.24);
 }
 
 .button3 {
-  position:relative;
+  position: relative;
   text-align: center;
 }
 
 #button3 {
-  background-color: #ff6b00;
+  background-color:#ff6b00;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color:#fff;
   font-weight: bold;
   padding-left: 127px;
   padding-right: 127px;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  border-top-width: 0px;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
   margin-right: 10px;
   padding-top: 9px;
   padding-bottom: 9px;
   margin-top: 8px;
-  border-bottom-width: 0px;
+  border-bottom-width: 0;
 }
 
 .card4 {
@@ -487,20 +483,20 @@ ul {
 }
 
 #button4 {
-  background-color: #ff6b00;
+  background-color:#ff6b00;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color:#fff;
   font-weight: bold;
   padding-left: 127px;
   padding-right: 127px;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  border-top-width: 0px;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
   margin-right: 10px;
   padding-top: 9px;
   padding-bottom: 9px;
   margin-top: 8px;
-  border-bottom-width: 0px;
+  border-bottom-width: 0;
 }
 
 .card5 {
@@ -569,20 +565,20 @@ ul {
 }
 
 #button5 {
-  background-color: #ff6b00;
+  background-color:#ff6b00;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color:#fff;
   font-weight: bold;
   padding-left: 127px;
   padding-right: 127px;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  border-top-width: 0px;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
   margin-right: 10px;
   padding-top: 9px;
   padding-bottom: 9px;
   margin-top: 8px;
-  border-bottom-width: 0px;
+  border-bottom-width: 0;
 }
 
 .card6 {
@@ -651,20 +647,20 @@ ul {
 }
 
 #button6 {
-  background-color: #ff6b00;
+  background-color:#ff6b00;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color:#fff;
   font-weight: bold;
   padding-left: 127px;
   padding-right: 127px;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  border-top-width: 0px;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
   margin-right: 10px;
   padding-top: 9px;
   padding-bottom: 9px;
   margin-top: 8px;
-  border-bottom-width: 0px;
+  border-bottom-width: 0;
 }
 
 .card7 {
@@ -733,20 +729,20 @@ ul {
 }
 
 #button7 {
-  background-color: #ff6b00;
+  background-color:#ff6b00;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color:#fff;
   font-weight: bold;
   padding-left: 127px;
   padding-right: 127px;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  border-top-width: 0px;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
   margin-right: 10px;
   padding-top: 9px;
   padding-bottom: 9px;
   margin-top: 8px;
-  border-bottom-width: 0px;
+  border-bottom-width: 0;
 }
 
 .card8 {
@@ -814,7 +810,7 @@ ul {
 .skills {
   margin-top: 0;
   text-align: center;
-  padding-left: 0px;
+  padding-left: 0;
   padding-top: 95px;
 }
 
@@ -825,7 +821,6 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: bold;
-
 }
 
 .symbol {
@@ -845,4 +840,3 @@ ul {
   font-size: 22px;
   font-weight: lighter;
 }
-
