@@ -8,6 +8,7 @@
   left: 0;
   top: 0;
   background-color: #3c3a39;
+  z-index: 1;
 }
 
 a {
@@ -38,6 +39,7 @@ a {
   display: block;
   cursor: pointer;
   background-color: #3c3a39;
+  border: 0;
 }
 
 .bar {
@@ -178,6 +180,7 @@ ul {
   bottom: 20%;
   margin: 0 0;
 }
+
 .card1 {
   width: 425px;
   display: grid;
@@ -255,7 +258,6 @@ ul {
 }
 
 .card2 {
-  width: 425px;
   display: grid;
   grid-template-columns: auto;
   background-image: url(Img/P_img/photo2.png);
@@ -338,7 +340,6 @@ ul {
 }
 
 .card3 {
-  width: 425px;
   display: grid;
   grid-template-columns: auto;
   background-image: url(Img/P_img/photo2.png);
@@ -421,7 +422,6 @@ ul {
 }
 
 .card4 {
-  width: 425px;
   display: grid;
   grid-template-columns: auto;
   background-image: url(Img/P_img/photo2.png);
@@ -504,7 +504,6 @@ ul {
 }
 
 .card5 {
-  width: 425px;
   display: grid;
   grid-template-columns: auto;
   background-image: url(Img/P_img/photo2.png);
@@ -587,7 +586,6 @@ ul {
 }
 
 .card6 {
-  width: 425px;
   display: grid;
   grid-template-columns: auto;
   background-image: url(Img/P_img/photo2.png);
@@ -670,7 +668,6 @@ ul {
 }
 
 .card7 {
-  width: 425px;
   display: grid;
   grid-template-columns: auto;
   background-image: url(Img/P_img/photo2.png);
@@ -751,3 +748,101 @@ ul {
   margin-top: 8px;
   border-bottom-width: 0px;
 }
+
+.card8 {
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  width: 425px;
+  height: 700px;
+  padding-left: 0;
+  background-image: url(Img/P_img/background2);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-position-y: 90%;
+}
+
+#p8-title {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-weight: lighter;
+  font-size: 72px;
+  line-height: 88px;
+  margin-bottom: 0;
+}
+
+.p8-title {
+  margin-bottom: 0px;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+#p8-text {
+  color: #fff;
+  padding-left: 20px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+
+.p8-text {
+  padding-right: 24px;
+}
+
+.button8 {
+  padding-left: 20px;
+}
+
+#button8 {
+  padding: 12px;
+  color: #fff;
+  background-color: #ff6b00;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  border: 0;
+}
+
+.card9 {
+  width: 425px;
+  height: 1300px;
+  background-image: url(Img/P_img/line.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #1c1a19
+}
+
+.skills {
+  margin-top: 0;
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 95px;
+}
+
+.skill-title {
+  color: #fff;
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+
+}
+
+.symbol {
+  color: #ff6b00;
+}
+
+.list {
+  text-align: center;
+  padding-left: 0;
+}
+
+.sub {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: lighter;
+}
+
