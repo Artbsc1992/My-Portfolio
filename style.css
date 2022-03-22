@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'inaimathiregular';
-  src: url('fonts/murasuit-webfont.woff2') format('woff2'), url('fonts/murasuit-webfont.woff') format('woff');
+  font-family: "inaimathiregular";
+  src: url("fonts/murasuit-webfont.woff2") format("woff2"), url("fonts/murasuit-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,7 +27,7 @@ a {
   height: 24px;
   left: 12px;
   top: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -79,7 +79,7 @@ a {
   left: 24px;
   top: 120px;
   color: #ff6b00;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -96,7 +96,7 @@ a {
   width: 327px;
   left: 24px;
   top: 256px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -115,7 +115,7 @@ a {
   height: 123px;
   left: 24px;
   top: 295px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #fff;
@@ -208,7 +208,7 @@ ul {
 }
 
 #work-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   padding-top: 90px;
   font-size: 40px;
   font-weight: normal;
@@ -238,7 +238,7 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 20px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
@@ -253,7 +253,7 @@ ul {
   padding-left: 20px;
   padding-bottom: 20px;
   margin-top: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 24px;
   font-size: 16px;
@@ -276,7 +276,7 @@ ul {
   border: 1px solid #000;
   padding: 10px;
   margin-right: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .button1 {
@@ -288,7 +288,7 @@ ul {
 #button1 {
   background-color: #ff6b00;
   padding: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   border: 0;
@@ -334,7 +334,7 @@ ul {
 
 #p2-title {
   text-align: left;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   color: #fff;
   font-size: 40px;
   line-height: 44px;
@@ -345,7 +345,7 @@ ul {
 
 #p2-text {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   width: 300px;
   padding-left: 15px;
@@ -367,7 +367,7 @@ ul {
   padding: 10px;
   margin-right: 10px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgba(255, 255, 255, 0.24);
 }
 
@@ -382,7 +382,7 @@ ul {
 
 #button2 {
   background-color: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   padding-left: 127px;
@@ -439,7 +439,7 @@ ul {
 
 #p3-title {
   text-align: left;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   color: #fff;
   font-size: 40px;
   line-height: 44px;
@@ -450,7 +450,7 @@ ul {
 
 #p3-text {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   width: 300px;
   padding-left: 15px;
@@ -472,7 +472,7 @@ ul {
   padding: 10px;
   margin-right: 10px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgba(255, 255, 255, 0.24);
 }
 
@@ -487,7 +487,7 @@ ul {
 
 #button3 {
   background-color: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   padding-left: 127px;
@@ -544,7 +544,7 @@ ul {
 
 #p4-title {
   text-align: left;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   color: #fff;
   font-size: 40px;
   line-height: 44px;
@@ -555,7 +555,7 @@ ul {
 
 #p4-text {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   width: 300px;
   padding-left: 15px;
@@ -577,7 +577,7 @@ ul {
   padding: 10px;
   margin-right: 10px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgba(255, 255, 255, 0.24);
 }
 
@@ -592,7 +592,7 @@ ul {
 
 #button4 {
   background-color: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   padding-left: 127px;
@@ -649,7 +649,7 @@ ul {
 
 #p5-title {
   text-align: left;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   color: #fff;
   font-size: 40px;
   line-height: 44px;
@@ -660,7 +660,7 @@ ul {
 
 #p5-text {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   width: 300px;
   padding-left: 15px;
@@ -682,7 +682,7 @@ ul {
   padding: 10px;
   margin-right: 10px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgba(255, 255, 255, 0.24);
 }
 
@@ -697,7 +697,7 @@ ul {
 
 #button5 {
   background-color: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   padding-left: 127px;
@@ -754,7 +754,7 @@ ul {
 
 #p6-title {
   text-align: left;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   color: #fff;
   font-size: 40px;
   line-height: 44px;
@@ -765,7 +765,7 @@ ul {
 
 #p6-text {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   width: 300px;
   padding-left: 15px;
@@ -787,7 +787,7 @@ ul {
   padding: 10px;
   margin-right: 10px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgba(255, 255, 255, 0.24);
 }
 
@@ -802,7 +802,7 @@ ul {
 
 #button6 {
   background-color: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   padding-left: 127px;
@@ -859,7 +859,7 @@ ul {
 
 #p7-title {
   text-align: left;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   color: #fff;
   font-size: 40px;
   line-height: 44px;
@@ -870,7 +870,7 @@ ul {
 
 #p7-text {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: left;
   font-size: 16px;
   width: 300px;
@@ -893,7 +893,7 @@ ul {
   padding: 10px;
   margin-right: 10px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgba(255, 255, 255, 0.24);
 }
 
@@ -908,7 +908,7 @@ ul {
 
 #button7 {
   background-color: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   padding-left: 127px;
@@ -952,7 +952,7 @@ ul {
 
 #p8-title {
   color: #ff6b00;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: lighter;
   font-size: 80px;
   line-height: 88px;
@@ -970,7 +970,7 @@ ul {
   color: #fff;
   padding-left: 20px;
   text-align: left;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: lighter;
@@ -990,7 +990,7 @@ ul {
   padding: 12px;
   color: #fff;
   background-color: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: bold;
   border: 0;
@@ -1025,7 +1025,7 @@ ul {
 
 .skill-title {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1040,8 +1040,144 @@ ul {
 .sub {
   padding-top: 15px;
   padding-bottom: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 22px;
   font-weight: lighter;
+}
+
+footer {
+  width: 425px;
+  height: 920px;
+}
+
+.contact {
+  height: 920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 425px;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  color: #172b4d;
+  text-align: center;
+  font-weight: 700;
+  line-height: 44px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  margin-top: 80px;
+}
+
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12.5px;
+}
+
+#full-name {
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+#email {
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+.input {
+  border: 0;
+  width: 350px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  padding-left: 20px;
+}
+
+.contact-line {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: #dbd8d7;
+  height: 1px;
+  text-align: left;
+}
+
+textarea {
+  width: 365px;
+  border: 0;
+  background-color: #fbf8f7;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  vertical-align: top;
+  height: 110px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.button-li {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 110px;
+}
+
+.touch {
+  background-color: #ff6b00;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.touch:hover {
+  background-color: #fff5e1;
+  border: #ff6b00;
+  color: #ff6b00;
+}
+
+.touch:active {
+  background-color: #e05304;
+  color: #fff;
+}
+
+.social-media2 {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  padding: 0;
+}
+
+ul.social-media2 {
+  padding-left: 30px;
+}
+
+.social-media2 li {
+  padding-right: 30px;
+}
+
+.social-line {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: #dbd8d7;
+  height: 1px;
+  text-align: left;
+}
+
+.end-line {
+  background-color: #000;
+  border: 1px solid black;
+  border-radius: 7px 7px 7px 7px;
+  height: 5px;
+  width: 170px;
 }

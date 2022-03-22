@@ -171,20 +171,46 @@
   </ul>
 </section>
 <footer>
-  <section>
-    <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-    <form action="#" method="post">
-      <ul>
-        <li>
-          <input type="text" placeholder="Full name">
+  <section class="contact">
+    <h3 class="contact-title">I'm always <br> interested in hearing about new projects,<br> so if you'd like to <br>chat please get in <br>touch.</h3>
+    <form action="https://formspree.io/f/xlezlyjn" method="post">
+      <ul class="contact-inputs">
+        <li id="full-name">
+          <input type="text" name="Full-name" placeholder="Full name" class="input" required maxlength="30">
+          <hr class="contact-line">
         </li>
-        <li>
-          <input type="text" placeholder="Email address">
+        <li id="email">
+          <input type="email" name="email" placeholder="Email address" class="input" required>
+          <hr class="contact-line">
         </li>
-        <li>
-          <textarea name="msg" id="msg" cols="30" rows="10">Enter text here</textarea>
+        <li id="text">
+          <textarea name="msg" id="msg" cols="30" rows="10" maxlength="500" required placeholder="Enter text here"></textarea>
+        </li>
+        <li class="button-li">
+          <button type="submit" class="touch">Get in touch</button>
         </li>
       </ul>
+      <hr class="social-line">
+      <div class="social">         
+        <ul class="social-media2">
+            <li>
+              <a href="#" class="icon1"><img src="Img/github2.png" alt="github"></a>
+            </li>
+            <li>
+              <a href="#" class="icon2"><img src="Img/linkedin2.png" alt="linkedin"></a>
+            </li>
+            <li>
+              <a href="#" class="icon3"><img src="Img/icon32.png" alt="icon3"></a>
+            </li>
+            <li>
+              <a href="#" class="icon4"><img src="Img/twitter2.png" alt="twitter"></a>
+            </li>
+            <li>
+              <a href="#" class="icon5"><img src="Img/icon52.png" alt="icon5"></a>
+            </li>
+          </ul>
+          <hr class="end-line">
+      </div>
     </form>
   </section>
 </footer>
