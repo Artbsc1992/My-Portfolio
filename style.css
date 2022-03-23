@@ -158,22 +158,12 @@ ul {
     height: 800px;
   }
   .tool-bar {
-    position: sticky;
-    display: flex;
     width: 100%;
     height: 72px;
     min-width: 769px;
     max-width: 100%;
-    left: 0;
-    top: 0;
-    background-color: #3c3a39;
-    z-index: 1;
     justify-content: flex-start;
     
-  }
-  
-  a {
-    text-decoration: none;
   }
   
   .name {
@@ -275,11 +265,13 @@ ul {
     margin-bottom: 10px;
   }
 }
+
 .card1 {
   width: 425px;
   display: grid;
   grid-template-columns: auto;
   height: 100%;
+  margin-top: 72px;
 }
 
 .work-title {
@@ -498,6 +490,87 @@ ul {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .card1 {
+    width: auto;
+    display: grid;
+    grid-template-areas: "work-title grid-line grid-line grid-line grid-line" 
+    "photo1 photo1 photo1 p1-title p1-title"
+    "photo1 photo1 photo1 p1-text p1-text"
+    "photo1 photo1 photo1 list-1 list-1"
+    "photo1 photo1 photo1 button1 button1"
+    "photo1 photo1 photo1 . .";
+    height: 100%;
+    margin-top: 72px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .work-title {
+    grid-area: work-title;
+    align-self: end;
+    width: auto;
+  }
+  
+  .grid-line {
+    grid-area: grid-line;
+    align-self: center;
+    width: 90%;
+    padding-left: 20px;
+  }
+
+  .photo1 {
+    grid-area: photo1;
+    width: auto;
+  }
+
+  .p1-title {
+    grid-area: p1-title;
+  }
+
+  .p1-text {
+    grid-area: p1-text;
+  }
+
+  .list-1 {
+    grid-area: list-1;
+  }
+
+  .button1 {
+    grid-area: button1;
+    padding: 0;
+  }
+  
+  #work-title {
+    padding-top: 0;
+    text-align: right;
+  }
+  #p1-title {
+    padding: 0;
+  }
+
+  #p1-text {
+    padding: 0;
+    width: 450px;
+    margin: 0;
+  }
+  .line-card1 {
+    width: 100%;
+  }
+  
+  .img1 {
+    padding-top: 0px;
+    padding-right: 0px;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .tags1 {
+    padding: 0;
+  }
+}
 .card3 {
   display: grid;
   grid-template-columns: auto;
