@@ -523,6 +523,7 @@ ul {
   .photo1 {
     grid-area: photo1;
     width: auto;
+    padding-bottom: 0;
   }
 
   .p1-title {
@@ -1097,6 +1098,53 @@ ul {
   color: #fff;
 }
 
+@media screen and (min-width: 768px){
+  .projects {
+    display: grid;
+    width: auto;
+    height: 100%;
+    grid-template-areas: "card2 card3 card4" "card5 card6 card7";
+  }
+  
+  .card2 {
+    grid-area: card2;
+    margin: 0;
+    justify-self: end;
+    margin-bottom: 30px;
+  }
+
+  .card3 {
+    grid-area: card3;
+    margin: 0;
+    justify-self: center;
+  }
+
+  .card4 {
+    grid-area: card4;
+    margin: 0;
+    justify-self: start;
+  }
+
+  .card5 {
+    grid-area: card5;
+    margin: 0;
+    justify-self: end;
+  }
+
+  .card6 {
+    grid-area: card6;
+    margin: 0;
+    justify-self: center;
+  }
+
+  .card7 {
+    grid-area: card7;
+    margin: 0;
+    justify-self: start;
+    margin-bottom: 100px;
+  }
+
+}
 .card8 {
   background-color: #1c1a19;
   display: flex;
