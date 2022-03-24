@@ -11,6 +11,7 @@
     <title>Portfolio</title>
 </head>
 <body>
+<section class="landing">
     <nav class="tool-bar">
         <a href="#" class="name">Arturo Hermida</a>
         <button class="hamburguer" type="button">
@@ -18,12 +19,28 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </button>
+        <ul class="left-nav">
+          <li>
+            <a href="#" class="item-nav">Portfolio</a>
+          </li>
+          <li>
+            <a href="#" class="item-nav">About</a>
+          </li>
+          <li>
+            <a href="#" class="item-nav">contact</a>
+          </li>
+          <li>
+            <a href="#"><img src="desktop-img/mail.png" alt="mail"></a>
+          </li>
+        </ul>
     </nav>
     <div class="content">
+        <div class="content-text">
         <h1 class="hello">Hey there.<br>I'm Arturo.</h1>
         <h3 class="profession">I'am a Software Developer</h3>
-        <p class="description">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+        <p class="description">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
             don't hestiate to contact me.</p>
+        </div>
         <div class="social">         
             <ul class="social-media">
                 <li>
@@ -44,10 +61,11 @@
               </ul>
           </div>
      </div>
+</section>
 <section class="card1">
     <div class="work-title grid1"><h2 id="work-title"> My Recent Works</h2></div>
     
-    <hr class="line-card1">
+    <div class="grid-line"><hr class="line-card1"></div>
 
     <div class="photo1 grid1"><img src="Img/P_img/photo1.png" alt="photo1" class="img1"></div>
     <div class="p1-title grid1"><h2 id="p1-title">Multi-Post Stories</h2></div>
@@ -63,6 +81,7 @@
     <div class="button1"><button id="button1" type="button">See Project</button>
     </div>
 </section>
+<div class="projects">
 <section class="card2">
   <div class="p2-title grid2"><h2 id="p2-title">Profesional Art<br>Printing Data</h2></div>
   <div class="p2-text"><p id="p2-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p></div>
@@ -135,6 +154,7 @@
   </div>
   <div class="button7"><button id="button7" type="button">See Project</button></div>
 </section>
+</div>
 <section class="card8">
   <div class="p8-title"><h1 id="p8-title">About me</h1></div>
   <div class="p8-text"><p id="p8-text">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p></div>
@@ -172,11 +192,12 @@
 </section>
 <footer>
   <section class="contact">
-    <h3 class="contact-title">I'm always <br> interested in hearing about new projects,<br> so if you'd like to <br>chat please get in <br>touch.</h3>
-    <form action="https://formspree.io/f/xlezlyjn" method="post">
+    <div class="foot-title"><h3 class="contact-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3></div>
+    <div class="form">
+      <form action="https://formspree.io/f/xlezlyjn" method="post">
       <ul class="contact-inputs">
         <li id="full-name">
-          <input type="text" name="Full-name" placeholder="Full name" class="input" required maxlength="30">
+          <input type="text" name="Full-name" placeholder="Full name" class="input" maxlength="30" required>
           <hr class="contact-line">
         </li>
         <li id="email">
@@ -190,8 +211,10 @@
           <button type="submit" class="touch">Get in touch</button>
         </li>
       </ul>
-      <hr class="social-line">
-      <div class="social">         
+    </form>
+   </div>
+   <div class="social-2">
+        <hr class="social-line">         
         <ul class="social-media2">
             <li>
               <a href="#" class="icon1"><img src="Img/github2.png" alt="github"></a>
@@ -211,7 +234,6 @@
           </ul>
           <hr class="end-line">
       </div>
-    </form>
   </section>
 </footer>
 </body>
