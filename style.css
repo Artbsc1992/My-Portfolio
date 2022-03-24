@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+body {
+  margin: 0;
+}
+
 .tool-bar {
   position: sticky;
   display: flex;
@@ -1215,6 +1219,42 @@ ul {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .card8 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 600px;
+    padding-left: 0;
+    background-image: url(desktop-img/background-about);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-size: auto;
+    align-items: flex-start;
+  }
+  
+  .p8-title {
+    margin-bottom: 0;
+    margin-top: 100px;
+    padding-left: 10%;
+  }
+  
+  #p8-text {
+    width: 550px;
+  }
+  
+  .p8-text {
+    padding-left: 8%;
+    line-height: 32px;
+  }
+
+  .button8 {
+    padding-left: 9.5%;
+    padding-top: 25px;
+  }
+}
+
 .card9 {
   width: 425px;
   height: 1300px;
@@ -1254,8 +1294,52 @@ ul {
   font-weight: lighter;
 }
 
+@media screen and (min-width: 768px) {
+  .card9 {
+    width: auto;
+    height: 600px;
+    background-image: url(Img/P_img/line.png);
+    background-position: center top;
+    background-size: 1050px 1px;
+    background-color: #1c1a19;
+  }
+  
+  .skills {
+    display: flex;
+    margin-top: 0;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 95px;
+    justify-content: space-around;
+  }
+  
+  .skill-title {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .list {
+    text-align: left;
+    padding-left: 0;
+  }
+  
+  .sub {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: lighter;
+  }
+  
+}
+
 footer {
-  width: 425px;
+  width: auto;
   height: 920px;
 }
 
@@ -1264,7 +1348,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 425px;
+  width: auto;
 }
 
 .contact-title {
@@ -1379,7 +1463,6 @@ ul.social-media2 {
   width: 100%;
   background-color: #dbd8d7;
   height: 1px;
-  text-align: left;
 }
 
 .end-line {
@@ -1388,4 +1471,121 @@ ul.social-media2 {
   border-radius: 7px 7px 7px 7px;
   height: 5px;
   width: 170px;
+}
+
+#first-name {
+  display: none;
+}
+
+#last-name {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  
+  footer {
+    width: auto;
+    height: 500px;
+  }
+  
+  .contact {
+    height: 500px;
+    margin-top: 200px;
+    display: grid;
+    width: auto;
+    grid-template-areas: "foot-title foot-title form form form"
+    "social-2 social-2 social-2 social-2 social-2";
+  }
+  
+  .foot-title {
+    grid-area: foot-title;
+    align-self: center;
+    width: 500px;
+    margin-bottom: 200px;
+  }
+
+  .form {
+    grid-area: form;
+    align-self: center;
+  }
+
+  .social-2 {
+    grid-area: social-2
+  }
+
+  .contact-title {
+    text-align: left;
+    
+  }
+  
+  .contact-inputs {
+    display: grid;
+    grid-template-areas: "first-name first-name last-name last-name" 
+    "email email email email"
+    "text1 text1 text1 text1"
+    "text1 text1 text1 text1"
+    "button-li button-li button-li button-li";
+    gap: 10px;
+  }
+  
+  #first-name {
+    grid-area: first-name;
+    display: inline;
+  }
+  
+  #last-name {
+    grid-area: last-name;
+    display: inline;
+  }
+  
+  #email {
+    grid-area: email;
+    padding: 0;
+  }
+  
+  #text {
+    grid-area: text1;
+  }
+
+  .button-li {
+    grid-area: button-li;
+    text-align: left;
+  }
+  
+
+  .input {
+    width: 100%;
+  }
+  
+  .contact-line {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: #dbd8d7;
+    height: 1px;
+    text-align: left;
+  }
+  
+  textarea {
+    width: 657px;
+    height: 88px;
+  }
+  
+  .end-line {
+    display: none;
+  }
+
+  #full-name {
+    display: none;
+  }
+
+  .touch {
+  border: 0;
+  padding: 12px 15px 12px 15px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f55800
+  }
 }
