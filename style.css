@@ -5,6 +5,7 @@
   font-style: normal;
 }
 
+html,
 body {
   margin: 0;
 }
@@ -14,7 +15,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 425px;
+  width: 100%;
   height: 48px;
   left: 0;
   top: 0;
@@ -68,7 +69,7 @@ a {
 .content {
   display: flex;
   flex-direction: column;
-  width: 425px;
+  width: 100%;
   height: 590px;
   left: 0;
   top: 48px;
@@ -152,35 +153,31 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   width: 165px;
-
 }
-
-
 
 @media screen and (min-width: 768px) {
   .landing {
     height: 800px;
   }
+
   .tool-bar {
     width: 100%;
     height: 72px;
     min-width: 769px;
     max-width: 100%;
     justify-content: flex-start;
-    
   }
-  
+
   .name {
     flex-grow: 1;
     justify-content: center;
     margin-right: 200px;
     padding-left: 50px;
   }
-  
+
   .hamburguer {
     display: none;
   }
-  
 
   .left-nav {
     display: block;
@@ -188,7 +185,7 @@ ul {
     flex-grow: 1;
     justify-content: flex-end;
     margin-right: 150px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .item-nav {
@@ -199,7 +196,7 @@ ul {
     font-weight: 600;
     padding-right: 50px;
   }
-  
+
   .content {
     display: flex;
     flex-direction: row;
@@ -207,22 +204,23 @@ ul {
     height: 100%;
     min-width: 769px;
     max-width: 100%;
-    background-image: url(desktop-img/background1.png);
+    background-image: url(desktop-img/background1.svg);
     background-size: 600px;
     background-position: right bottom;
     background-repeat: no-repeat;
     background-position-y: 80%;
   }
-  
+
   .content-text {
     order: 1;
     flex-basis: 100%;
   }
+
   .hello {
     font-size: 72px;
     width: auto;
     height: auto;
-    line-height: 82px;  
+    line-height: 82px;
   }
 
   .profession {
@@ -250,13 +248,13 @@ ul {
     flex-shrink: 9;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   .social-media {
     flex-direction: column;
     align-items: center;
@@ -271,7 +269,7 @@ ul {
 }
 
 .card1 {
-  width: 425px;
+  width: auto;
   display: grid;
   grid-template-columns: auto;
   height: 100%;
@@ -498,25 +496,26 @@ ul {
   .card1 {
     width: auto;
     display: grid;
-    grid-template-areas: "work-title grid-line grid-line grid-line grid-line" 
-    "photo1 photo1 photo1 p1-title p1-title"
-    "photo1 photo1 photo1 p1-text p1-text"
-    "photo1 photo1 photo1 list-1 list-1"
-    "photo1 photo1 photo1 button1 button1"
-    "photo1 photo1 photo1 . .";
+    grid-template-areas:
+      "work-title grid-line grid-line grid-line grid-line"
+      "photo1 photo1 photo1 p1-title p1-title"
+      "photo1 photo1 photo1 p1-text p1-text"
+      "photo1 photo1 photo1 list-1 list-1"
+      "photo1 photo1 photo1 button1 button1"
+      "photo1 photo1 photo1 . .";
     height: 100%;
     margin-top: 72px;
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
   }
-  
+
   .work-title {
     grid-area: work-title;
     align-self: end;
     width: auto;
   }
-  
+
   .grid-line {
     grid-area: grid-line;
     align-self: center;
@@ -528,6 +527,7 @@ ul {
     grid-area: photo1;
     width: auto;
     padding-bottom: 0;
+    margin-left: 40px;
   }
 
   .p1-title {
@@ -546,36 +546,44 @@ ul {
     grid-area: button1;
     padding: 0;
   }
-  
+
   #work-title {
     padding-top: 0;
     text-align: right;
   }
+
   #p1-title {
     padding: 0;
+    font-size: 55px;
+    width: 500px;
+    height: 55px;
   }
 
   #p1-text {
     padding: 0;
-    width: 450px;
+    width: 500px;
+    height: 150px;
     margin: 0;
+    line-height: 28px;
+    font-size: 25px;
   }
+
   .line-card1 {
     width: 100%;
   }
-  
+
   .img1 {
-    padding-top: 0px;
-    padding-right: 0px;
-    text-align: center;
-    width: 90%;
+    padding-top: 0;
+    padding-right: 0;
+    width: 70%;
     height: 90%;
   }
-  
+
   .tags1 {
     padding: 0;
   }
 }
+
 .card3 {
   display: grid;
   grid-template-columns: auto;
@@ -1102,14 +1110,14 @@ ul {
   color: #fff;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .projects {
     display: grid;
     width: auto;
     height: 100%;
     grid-template-areas: "card2 card3 card4" "card5 card6 card7";
   }
-  
+
   .card2 {
     grid-area: card2;
     margin: 0;
@@ -1147,13 +1155,13 @@ ul {
     justify-self: start;
     margin-bottom: 100px;
   }
-
 }
+
 .card8 {
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
-  width: 425px;
+  width: 100%;
   height: 700px;
   padding-left: 0;
   background-image: url(Img/P_img/background2);
@@ -1233,17 +1241,17 @@ ul {
     background-size: auto;
     align-items: flex-start;
   }
-  
+
   .p8-title {
     margin-bottom: 0;
     margin-top: 100px;
     padding-left: 10%;
   }
-  
+
   #p8-text {
     width: 550px;
   }
-  
+
   .p8-text {
     padding-left: 8%;
     line-height: 32px;
@@ -1256,7 +1264,7 @@ ul {
 }
 
 .card9 {
-  width: 425px;
+  width: 100%;
   height: 1300px;
   background-image: url(Img/P_img/line.png);
   background-position: center top;
@@ -1303,7 +1311,7 @@ ul {
     background-size: 1050px 1px;
     background-color: #1c1a19;
   }
-  
+
   .skills {
     display: flex;
     margin-top: 0;
@@ -1312,7 +1320,7 @@ ul {
     padding-top: 95px;
     justify-content: space-around;
   }
-  
+
   .skill-title {
     color: #fff;
     font-family: "Inter", sans-serif;
@@ -1321,12 +1329,12 @@ ul {
     padding-bottom: 20px;
     font-weight: bold;
   }
-  
+
   .list {
     text-align: left;
     padding-left: 0;
   }
-  
+
   .sub {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1335,7 +1343,6 @@ ul {
     font-size: 22px;
     font-weight: lighter;
   }
-  
 }
 
 footer {
@@ -1482,21 +1489,23 @@ ul.social-media2 {
 }
 
 @media screen and (min-width: 768px) {
-  
   footer {
-    width: auto;
-    height: 500px;
+    width: 100%;
+    height: 800px;
   }
-  
+
   .contact {
-    height: 500px;
-    margin-top: 200px;
+    height: 800px;
     display: grid;
     width: auto;
-    grid-template-areas: "foot-title foot-title form form form"
-    "social-2 social-2 social-2 social-2 social-2";
+    grid-template-areas:
+      "foot-title foot-title form form form"
+      "foot-title foot-title form form form"
+      "foot-title foot-title form form form"
+      "social-2 social-2 social-2 social-2 social-2";
+    justify-content: inherit;
   }
-  
+
   .foot-title {
     grid-area: foot-title;
     align-self: center;
@@ -1510,39 +1519,44 @@ ul.social-media2 {
   }
 
   .social-2 {
-    grid-area: social-2
+    grid-area: social-2;
+    width: auto;
   }
 
   .contact-title {
     text-align: left;
-    
+    border-left-width: 130px;
+    margin-left: 130px;
+    font-size: 40px;
+    line-height: 72px;
+    width: 500px;
+    padding-top: 50px;
   }
-  
+
   .contact-inputs {
     display: grid;
-    grid-template-areas: "first-name first-name last-name last-name" 
-    "email email email email"
-    "text1 text1 text1 text1"
-    "text1 text1 text1 text1"
-    "button-li button-li button-li button-li";
+    grid-template-areas:
+      "full-name full-name full-name full-name"
+      "email email email email"
+      "text1 text1 text1 text1"
+      "text1 text1 text1 text1"
+      "button-li button-li button-li button-li";
     gap: 10px;
+    padding-right: 200px;
+    padding-left: 0;
   }
-  
-  #first-name {
-    grid-area: first-name;
+
+  #full-name {
+    grid-area: full-name;
     display: inline;
+    padding: 0;
   }
-  
-  #last-name {
-    grid-area: last-name;
-    display: inline;
-  }
-  
+
   #email {
     grid-area: email;
     padding: 0;
   }
-  
+
   #text {
     grid-area: text1;
   }
@@ -1551,41 +1565,31 @@ ul.social-media2 {
     grid-area: button-li;
     text-align: left;
   }
-  
 
   .input {
     width: 100%;
   }
-  
-  .contact-line {
-    border: 0;
-    clear: both;
-    display: block;
-    width: 100%;
-    background-color: #dbd8d7;
-    height: 1px;
-    text-align: left;
-  }
-  
+
   textarea {
     width: 657px;
     height: 88px;
   }
-  
+
+  #msg {
+    padding-left: 20px;
+    width: 100%;
+  }
+
   .end-line {
     display: none;
   }
 
-  #full-name {
-    display: none;
-  }
-
   .touch {
-  border: 0;
-  padding: 12px 15px 12px 15px;
-  font-size: 17px;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  background-color: #f55800
+    border: 0;
+    padding: 12px 15px 12px 15px;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    background-color: #f55800;
   }
 }
