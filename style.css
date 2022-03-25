@@ -508,6 +508,7 @@ ul {
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 72px;
   }
 
   .work-title {
@@ -527,29 +528,36 @@ ul {
     grid-area: photo1;
     width: auto;
     padding-bottom: 0;
-    margin-left: 40px;
+    margin-left: 114px;
   }
 
   .p1-title {
     grid-area: p1-title;
+    margin-left: 38px;
   }
 
   .p1-text {
     grid-area: p1-text;
+    padding-left: 38px;
   }
 
   .list-1 {
     grid-area: list-1;
+    margin-left: 40px;
   }
 
   .button1 {
     grid-area: button1;
     padding: 0;
+    right: 0;
+    left: 40px;
   }
 
   #work-title {
     padding-top: 0;
     text-align: right;
+    margin-left: 114px;
+    margin-bottom: 80px;
   }
 
   #p1-title {
@@ -565,7 +573,7 @@ ul {
     height: 150px;
     margin: 0;
     line-height: 28px;
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .line-card1 {
@@ -575,8 +583,8 @@ ul {
   .img1 {
     padding-top: 0;
     padding-right: 0;
-    width: 70%;
-    height: 90%;
+    width: 900px;
+    height: 500px;
   }
 
   .tags1 {
@@ -1123,30 +1131,115 @@ ul {
     margin: 0;
     justify-self: end;
     margin-bottom: 30px;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(desktop-img/Project1.jpg);
+  }
+
+  .button2 {
+    display: none;
+  }
+
+  .card2:hover > .button2 {
+    display: block;
+  }
+
+  .card2:hover {
+    background-image: url(desktop-img/Project1.jpg);
+  }
+
+  .card2:hover > .grid2 {
+    visibility: hidden;
   }
 
   .card3 {
     grid-area: card3;
     margin: 0;
     justify-self: center;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(desktop-img/project2.jpg);
+  }
+
+  .button3 {
+    display: none;
+  }
+
+  .card3:hover > .button3 {
+    display: block;
+  }
+
+  .card3:hover {
+    background-image: url(desktop-img/project2.jpg);
+  }
+
+  .card3:hover > .grid3 {
+    visibility: hidden;
   }
 
   .card4 {
     grid-area: card4;
     margin: 0;
     justify-self: start;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(desktop-img/project3.jpg);
+  }
+
+  .button4 {
+    display: none;
+  }
+
+  .card4:hover > .button4 {
+    display: block;
+  }
+
+  .card4:hover {
+    background-image: url(desktop-img/project3.jpg);
+  }
+
+  .card4:hover > .grid4 {
+    visibility: hidden;
   }
 
   .card5 {
     grid-area: card5;
     margin: 0;
     justify-self: end;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(desktop-img/Project1.jpg);
+  }
+
+  .button5 {
+    display: none;
+  }
+
+  .card5:hover > .button5 {
+    display: block;
+  }
+
+  .card5:hover {
+    background-image: url(desktop-img/Project1.jpg);
+  }
+
+  .card5:hover > .grid5 {
+    visibility: hidden;
   }
 
   .card6 {
     grid-area: card6;
     margin: 0;
     justify-self: center;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(desktop-img/project2.jpg);
+  }
+
+  .button6 {
+    display: none;
+  }
+
+  .card6:hover > .button6 {
+    display: block;
+  }
+
+  .card6:hover {
+    background-image: url(desktop-img/project2.jpg);
+  }
+
+  .card6:hover > .grid6 {
+    visibility: hidden;
   }
 
   .card7 {
@@ -1154,6 +1247,23 @@ ul {
     margin: 0;
     justify-self: start;
     margin-bottom: 100px;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(desktop-img/project3.jpg);
+  }
+
+  .button7 {
+    display: none;
+  }
+
+  .card7:hover > .button7 {
+    display: block;
+  }
+
+  .card7:hover {
+    background-image: url(desktop-img/project3.jpg);
+  }
+
+  .card7:hover > .grid7 {
+    visibility: hidden;
   }
 }
 
