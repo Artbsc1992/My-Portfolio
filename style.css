@@ -374,6 +374,7 @@ ul {
   font-weight: bold;
   border: 0;
   font-size: 17px;
+  transition: all 0.5s ease-out;
 }
 
 #button1:hover {
@@ -400,6 +401,11 @@ ul {
   height: 450px;
   margin-bottom: 50px;
   padding-left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card2:hover {
+  transform: scale(1.1);
 }
 
 .grid2 {
@@ -479,6 +485,7 @@ ul {
   width: 100%;
   height: 100%;
   font-size: 18px;
+  transition: all 0.5s ease-out;
 }
 
 #button2:hover {
@@ -605,6 +612,11 @@ ul {
   height: 450px;
   margin-bottom: 50px;
   padding-left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card3:hover {
+  transform: scale(1.1);
 }
 
 .grid3 {
@@ -684,6 +696,7 @@ ul {
   width: 100%;
   height: 100%;
   font-size: 18px;
+  transition: all 0.5s ease-out;
 }
 
 #button3:hover {
@@ -710,6 +723,11 @@ ul {
   height: 450px;
   margin-bottom: 50px;
   padding-left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card4:hover {
+  transform: scale(1.1);
 }
 
 .grid4 {
@@ -789,6 +807,7 @@ ul {
   width: 100%;
   height: 100%;
   font-size: 18px;
+  transition: all 0.5s ease-out;
 }
 
 #button4:hover {
@@ -815,6 +834,11 @@ ul {
   height: 450px;
   margin-bottom: 50px;
   padding-left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card5:hover {
+  transform: scale(1.1);
 }
 
 .grid5 {
@@ -894,6 +918,7 @@ ul {
   width: 100%;
   height: 100%;
   font-size: 18px;
+  transition: all 0.5s ease-out;
 }
 
 #button5:hover {
@@ -920,6 +945,11 @@ ul {
   height: 450px;
   margin-bottom: 50px;
   padding-left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card6:hover {
+  transform: scale(1.1);
 }
 
 .grid6 {
@@ -999,6 +1029,7 @@ ul {
   width: 100%;
   height: 100%;
   font-size: 18px;
+  transition: all 0.5s ease-out;
 }
 
 #button6:hover {
@@ -1025,6 +1056,11 @@ ul {
   height: 450px;
   margin-bottom: 130px;
   padding-left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card7:hover {
+  transform: scale(1.1);
 }
 
 .grid7 {
@@ -1105,6 +1141,7 @@ ul {
   width: 100%;
   height: 100%;
   font-size: 18px;
+  transition: all 0.5s ease-out;
 }
 
 #button7:hover {
@@ -1324,6 +1361,7 @@ ul {
   font-size: 17px;
   font-weight: bold;
   border: 0;
+  transition: all 0.5s ease-out;
 }
 
 #button8:hover {
@@ -1545,6 +1583,7 @@ textarea {
   color: #fff;
   font-size: 20px;
   font-weight: 700;
+  transition: all 0.5s ease-out;
 }
 
 .touch:hover {
