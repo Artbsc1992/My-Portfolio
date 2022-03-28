@@ -1742,3 +1742,11 @@ ul.social-media2 {
     background-color: #f55800;
   }
 }
+
+:focus {
+  outline: 4px solid red;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
