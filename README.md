@@ -3,7 +3,6 @@
 # My Portfolio
 
 > Hello I'm Arturo Hermida and I'm a fullstack developer.
-> Online version: https://artbsc1992.github.io/My-Portfolio/
 
  ## Getting Started
 
@@ -21,6 +20,8 @@ To get a local copy up and running follow these simple example steps.
 - HTML
 - CSS
 
+## Live demo
+The live demo [link](https://artbsc1992.github.io/My-Portfolio/).
 
 ## Author
 
