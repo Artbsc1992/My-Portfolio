@@ -1772,8 +1772,28 @@ ul.social-media2 {
     position: sticky;
   }
 
+  nav.active > * {
+    width: 87.5%;
+  }
+
   nav.active a.name {
     display: none;
+  }
+
+  nav.active a.item-nav2 {
+    text-decoration: none;
+    color: #fff5e1;
+    width: 100%;
+  }
+
+  nav.active > ul {
+    padding: 0%;
+  }
+
+  nav.active > ul > li {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #6f6c6b;
+    margin-bottom: 24px;
   }
 
   .hamburguer.active > * {
@@ -1781,11 +1801,17 @@ ul.social-media2 {
   }
 
   .hamburguer.active {
+    height: 30px;
+    align-self: flex-end;
+    margin: 15px;
+  }
+
+  .hamburguer.active {
     background-image: url("/Img/x-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 10px;
-    height: 10px;
+    width: 16px;
+    height: 16px;
   }
 
   .item-nav2 {
@@ -1797,11 +1823,18 @@ ul.social-media2 {
     text-align: left;
     align-self: flex-start;
     padding-left: 16px;
-    width: 87.5%;
-    border-bottom: 1px solid #6f6c6b;
+    width: 100%;
+  }
+  
+  nav.active .left-nav {
+    display: block;
   }
 
-  nav.active .left-nav li:nth-child(n+4) {
+  nav.active li:nth-child(-n+3) {
+    display: block;
+  }
+
+  nav.active li:nth-child(n+4) {
     display: none;
   }
 }
