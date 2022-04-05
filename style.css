@@ -1763,3 +1763,45 @@ ul.social-media2 {
 :focus:not(:focus-visible) {
   outline: none;
 }
+
+@media screen and (max-width: 768px) {
+  nav.active {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: sticky;
+  }
+
+  nav.active a.name {
+    display: none;
+  }
+
+  .hamburguer.active > * {
+    display: none;
+  }
+
+  .hamburguer.active {
+    background-image: url("/Img/x-menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+  }
+
+  .item-nav2 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 16px;
+    width: 87.5%;
+    border-bottom: 1px solid #6f6c6b;
+  }
+
+  nav.active .left-nav li:nth-child(n+4) {
+    display: none;
+  }
+}
