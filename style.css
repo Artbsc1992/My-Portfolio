@@ -54,25 +54,24 @@ a {
   border: 0;
 }
 
-.hamburguer.active .bar:nth-child(2){
-  opacity: 0;
-}
-
-.hamburguer.active .bar:nth-child(1){
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburguer.active .bar:nth-child(3){
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-
 .bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
   background-color: #fff;
+}
+
+.hamburguer.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburguer.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .left-nav {
@@ -1801,31 +1800,27 @@ ul.social-media2 {
   }
 
   .hamburguer.active {
-    height: 30px;
-    align-self: flex-end;
-    margin: 15px;
-  }
-
-  .hamburguer.active {
     background-image: url("/Img/x-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
+    align-self: flex-end;
     width: 16px;
     height: 16px;
+    margin: 15px;
   }
 
   .item-nav2 {
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     align-self: flex-start;
     padding-left: 16px;
     width: 100%;
   }
-  
+
   nav.active .left-nav {
     display: block;
   }
