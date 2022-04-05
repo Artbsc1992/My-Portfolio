@@ -31,7 +31,14 @@ The live demo [link](https://artbsc1992.github.io/My-Portfolio/).
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+## Contributions
+
+- [Daniel Malo](https://github.com/Danie12345)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
