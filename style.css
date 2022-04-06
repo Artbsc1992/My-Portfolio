@@ -7,7 +7,7 @@
 
 html,
 body {
-  width: 100%;
+  width: 100vw;
   margin: 0%;
   padding: 0%;
 }
@@ -1836,48 +1836,74 @@ ul.social-media2 {
   }
 }
 
-.preview-container {
+#preview-container {
   position: fixed;
   top:0; left: 0;
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(2px);
+  /* padding: 16% 5%; */
 }
 
 .preview {
-  width: auto;
-  height: auto;
+  width: 95.7333%;
+  height: 89.253731343%;
   color: #091e42;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-self: center;
   justify-content: center;
+  padding: 12px 0%;
+  margin: 5.373134328% 0%;
 }
 
-.h3-preview {
+.preview-divtop {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 4.664723032%);
+}
+
+.preview-title {
   text-align: left;
-  margin-left: 15px;
+  width: calc(100% - 4.664723032%);
+  color: #091e42;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin: unset;
+  margin-bottom: 16px;
 }
 
 .preview-img {
-  width: 327px;
+  width: calc(100% - 4.664723032%);
   height: auto;
 }
 
 .preview-langs {
-  width: 100%;
+  width: calc(100% - 4.664723032%);
   height: 50px;
   text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .preview-langs > * {
-  width: 100px;
-  height: 40px;
-  color: black;
+  text-align: center;
+  display: inline;
+  height: 36px;
+  border: 1px solid #000;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  background: none;
+  margin-right: 12px;
 }
 
 .preview-container .preview-card {
@@ -1895,8 +1921,9 @@ ul.social-media2 {
   background-image: url("Img/x-menu.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 12px;
-  height: 100%;
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
   display: flex;
   align-items: flex-end;
 }
@@ -1904,16 +1931,17 @@ ul.social-media2 {
 .preview-icon {
   display: flex;
   align-items: flex-end;
-  width: 73.48%;
+  width: calc(100% - 4.664723032%);
   flex-direction: row-reverse;
+  height: 16px;
 }
 
 .preview-text {
-  width: 73.48%;
+  width: calc(100% - 4.664723032%);
 }
 
 .preview-buttons {
   display: flex;
-  justify-content: space-around;
-  width: 73.48%;
+  justify-content: space-between;
+  width: calc(100% - 4.664723032%);
 }
