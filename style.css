@@ -1967,14 +1967,14 @@ ul.social-media2 {
     width: 90%;
     height: 89.253731343%;
     min-height: 600px;
-    max-width: 1200px;
+    max-width: fit-content;
     color: #091e42;
     background-color: white;
     flex-direction: column;
     align-items: center;
     justify-self: center;
     justify-content: center;
-    padding: 12px 0%;
+    padding: 20px;
     margin: 5.373134328% 0%;
   }
 
