@@ -1964,10 +1964,9 @@ ul.social-media2 {
     display: grid;
     grid-template-areas: "ptitle ptitle ptitle" "plangs plangs ." "pimg pimg ptext" "pimg pimg ptext" "pimg pimg pbuttons";
     gap: 0;
-    width: 90%;
+    width: fit-content;
     height: 89.253731343%;
     min-height: 600px;
-    max-width: fit-content;
     color: #091e42;
     background-color: white;
     flex-direction: column;
