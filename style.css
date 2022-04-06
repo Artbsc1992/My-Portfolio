@@ -1764,6 +1764,7 @@ ul.social-media2 {
 :focus:not(:focus-visible) {
   outline: none;
 }
+
 /* Menu dropdown */
 @media screen and (max-width: 768px) {
   nav.active {
@@ -1982,7 +1983,7 @@ ul.social-media2 {
     width: 100%;
   }
 
-  .preview-title{
+  .preview-title {
     margin: 0;
   }
 

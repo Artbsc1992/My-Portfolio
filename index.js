@@ -2,7 +2,6 @@ const hamburger = document.querySelector('.hamburguer');
 const navMenu = document.querySelector('nav');
 const navItems = document.querySelectorAll('.item-nav2');
 const previewContainer = document.querySelector('.preview-container');
-const previewCard = document.querySelectorAll('.preview-card');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -79,16 +78,16 @@ const cardsArr = [
   },
 ];
 
-let template = (obj) => {
-  let div = document.createElement('div');
+const template = (obj) => {
+  const div = document.createElement('div');
   div.classList.add('preview');
 
-  let divTop = document.createElement('div');
+  const divTop = document.createElement('div');
   divTop.classList.add('preview-divtop');
-  let h3 = document.createElement('h3');
+  const h3 = document.createElement('h3');
   h3.appendChild(document.createTextNode(obj.title));
   h3.classList.add('preview-title');
-  let divIcon = document.createElement('div');
+  const divIcon = document.createElement('div');
 
   const i = document.createElement('i');
   i.style.height = '12px';
@@ -100,7 +99,7 @@ let template = (obj) => {
   divTop.appendChild(h3);
   divTop.appendChild(i);
 
-  let div1 = document.createElement('div');
+  const div1 = document.createElement('div');
   obj.buttons.langs.forEach((btn) => {
     const button = document.createElement('button');
     button.appendChild(document.createTextNode(btn));
@@ -121,7 +120,7 @@ let template = (obj) => {
   obj.buttons.other.forEach((btn) => {
     const button = document.createElement('button');
     const [a, b, c] = btn;
-    const img = document.createElement('img')
+    const img = document.createElement('img');
     button.appendChild(document.createTextNode(a));
     button.setAttribute('href', b);
     img.setAttribute('src', c);
@@ -131,7 +130,7 @@ let template = (obj) => {
     div2.appendChild(button);
   });
 
-  div2.classList.add('preview-buttons')
+  div2.classList.add('preview-buttons');
   div.appendChild(divTop);
   div.appendChild(div1);
   div.appendChild(img);
