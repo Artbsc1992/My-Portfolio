@@ -42,37 +42,54 @@ function validateComments(comments, reqmsg, invmsg) {
 
 form.addEventListener("submit", (event) => {
 	let nameValid = validateName(form.elements["full-name"].value, nameErrorMsg);
-	let emailValid = validateEmail(form.elements["email"].value, emailReqMsg, emailInvMsg);
-  let commentsValid = validateComments(form.elements["comments"].value, commentsReqMsg, commentsInvMsg);
+	let emailValid = validateEmail(form.elements.email.value, emailReqMsg, emailInvMsg);
+  let commentsValid = validateComments(form.elements.msg.value, commentsReqMsg, commentsInvMsg);
 	if (nameValid[0] && emailValid[0] && commentsValid[0]) {
     smallMsg.innerHTML = 'Yay, thanks for contacting me!';
+
     form.elements["full-name"].classList.remove('invalid-state');
     form.elements["email"].classList.remove('invalid-state');
-    form.elements["comments"].classList.remove('invalid-state-comments');
+    form.elements["msg"].classList.remove('invalid-state-comments');
+    smallMsg.classList.remove('unsuccess');
+
     form.elements["full-name"].classList.add('valid-state');
     form.elements["email"].classList.add('valid-state');
-    form.elements["comments"].classList.add('valid-state-comments');
+    form.elements["msg"].classList.add('valid-state-comments');
     smallMsg.classList.add('success');
-    smallMsg.classList.remove('unsuccess');
     return;
 	} else {
     smallMsg.classList.remove('success');
     smallMsg.classList.add('unsuccess');
     event.preventDefault();
+    const [isNameValid, isEmailValid, isCommentsValid] = [
+      nameValid[1], emailValid[1], commentsValid[1],
+    ];
     if (!nameValid[0]) {
-      smallMsg.innerHTML = nameValid[1];
-      form.elements["full-name"].classList.remove('valid-state');
-      form.elements["full-name"].classList.add('invalid-state');
+      smallMsg.innerHTML = isNameValid;
+      form.elements['full-name'].classList.remove('valid-state');
+      form.elements['full-name'].classList.add('invalid-state');
+    } else {
+      form.elements['full-name'].classList.remove('invalid-state');
+      form.elements['full-name'].classList.add('valid-state');
+      smallMsg.innerHTML = '';
     }
     if (!emailValid[0]) {
-      smallMsg.innerHTML = emailValid[1];
-      form.elements["email"].classList.remove('valid-state');
-      form.elements["email"].classList.add('invalid-state');
+      smallMsg.innerHTML = smallMsg.innerHTML === '' ? isEmailValid : smallMsg.innerHTML;
+      form.elements.email.classList.remove('valid-state');
+      form.elements.email.classList.add('invalid-state');
+    } else {
+      form.elements.email.classList.add('valid-state');
+      form.elements.email.classList.remove('invalid-state');
+      smallMsg.innerHTML = smallMsg.innerHTML === '' ? isEmailValid : smallMsg.innerHTML;
     }
     if (!commentsValid[0]) {
-      smallMsg.innerHTML = commentsValid[1];
-      form.elements["comments"].classList.remove('valid-state-comments');
-      form.elements["comments"].classList.add('invalid-state-comments');
+      smallMsg.innerHTML = smallMsg.innerHTML === '' ? isCommentsValid : smallMsg.innerHTML;
+      form.elements.msg.classList.remove('valid-state-comments');
+      form.elements.msg.classList.add('invalid-state-comments');
+    } else {
+      form.elements.msg.classList.add('valid-state-comments');
+      form.elements.msg.classList.remove('invalid-state-comments');
+      smallMsg.innerHTML = smallMsg.innerHTML === '' ? isCommentsValid : smallMsg.innerHTML;
     }
   }
 });
