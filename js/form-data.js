@@ -14,17 +14,15 @@ function formInputListens(inputType) {
 }
 
 function setFormInput(inputType) {
-  if (localStorage[inputType] !== '') {
-    formReloads.elements[inputType].value = JSON.parse(localStorage['form-data'])[inputType];
-  }
+  formReloads.elements[inputType].value = JSON.parse(localStorage['form-data'])[inputType];
 }
 
 window.addEventListener('load', () => {
-  if (localStorage['form-data'] !== formData) {
+  if (localStorage.getItem("form-data") === null) {
+    localStorage.setItem('form-data', JSON.stringify(formData));
+  } else {
     formData = JSON.parse(localStorage.getItem('form-data'));
   }
-
-  formData = JSON.parse(localStorage.getItem('form-data'));
   formInputListens('name');
   formInputListens('email');
   formInputListens('msg');
