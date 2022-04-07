@@ -14,10 +14,16 @@ function formInputListens(inputType) {
 }
 
 function setFormInput(inputType) {
-  formReloads.elements[inputType].value = JSON.parse(localStorage['form-data'])[inputType];
+  if (localStorage[inputType] !== '') {
+    formReloads.elements[inputType].value = JSON.parse(localStorage['form-data'])[inputType];
+  }
 }
 
 window.addEventListener('load', () => {
+  if (localStorage['form-data'] !== formData) {
+    formData = JSON.parse(localStorage.getItem('form-data'));
+  }
+
   formData = JSON.parse(localStorage.getItem('form-data'));
   formInputListens('name');
   formInputListens('email');
