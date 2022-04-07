@@ -19,6 +19,7 @@ To get a local copy up and running follow these simple example steps.
 
 - HTML
 - CSS
+- Javascript
 
 ## Live demo
 The live demo [link](https://artbsc1992.github.io/My-Portfolio/).
