@@ -195,21 +195,21 @@
   <section class="contact" id="contact">
     <div class="foot-title"><h3 class="contact-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3></div>
     <div class="form">
-      <form action="https://formspree.io/f/xlezlyjn" method="post">
+      <form action="https://formspree.io/f/xlezlyjn" method="post" id="form">
       <ul class="contact-inputs">
         <li id="full-name">
-          <input type="text" name="Full-name" placeholder="Full name" class="input" maxlength="30" required>
+          <input type="text" name="Full-name" placeholder="Full name" class="input">
           <hr class="contact-line">
         </li>
         <li id="email">
-          <input type="email" name="email" placeholder="Email address" class="input" required>
+          <input type="email" name="email" placeholder="Email address" class="input">
           <hr class="contact-line">
         </li>
         <li id="text">
-          <textarea name="msg" id="msg" cols="30" rows="10" maxlength="500" required placeholder="Enter text here"></textarea>
+          <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter text here"></textarea>
         </li>
         <li class="button-li">
-          <button type="submit" class="touch">Get in touch</button>
+          <button type="submit" class="touch">Get in touch</button><small class="form-msg"></small>
         </li>
       </ul>
     </form>
@@ -237,7 +237,8 @@
       </div>
   </section>
 </footer>
-<script src="index.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/form-validation.js"></script>
 </body>
 
 </html>
