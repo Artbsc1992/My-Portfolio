@@ -7,8 +7,7 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
   margin: 0%;
   padding: 0%;
 }
@@ -1766,6 +1765,7 @@ ul.social-media2 {
   outline: none;
 }
 
+/* Menu dropdown */
 @media screen and (max-width: 768px) {
   nav.active {
     min-height: 100vh;
@@ -1834,5 +1834,179 @@ ul.social-media2 {
 
   nav.active li:nth-child(n+4) {
     display: none;
+  }
+}
+
+.preview-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.preview-container.active {
+  display: flex;
+}
+
+.preview {
+  display: flex;
+  width: 90%;
+  height: 89.253731343%;
+  min-height: 600px;
+  color: #091e42;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  justify-content: space-around;
+  padding: 12px 0%;
+  margin: 5.373134328% 0%;
+}
+
+.preview-divtop {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+}
+
+.preview-title {
+  text-align: left;
+  width: 94%;
+  color: #091e42;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin: unset;
+  margin-bottom: 16px;
+}
+
+.preview-img {
+  max-height: 280px;
+  height: auto;
+  max-width: 94%;
+}
+
+.preview-langs {
+  width: 94%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.preview-langs > * {
+  text-align: center;
+  display: inline;
+  height: 36px;
+  border: 1px solid #000;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  background: none;
+  margin-right: 12px;
+}
+
+.preview-container .preview-card {
+  display: inline-block;
+  filter: none;
+  height: 100vh;
+  width: 100%;
+}
+
+.preview-container .preview-card.active {
+  display: inline-block;
+}
+
+.cross-menu2 {
+  background-image: url("Img/x-menu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cross-menu2:hover {
+  transform: rotate(90deg);
+  transition-duration: 0.3s;
+}
+
+.preview-icon {
+  display: flex;
+  align-items: flex-end;
+  width: 94%;
+  flex-direction: row-reverse;
+  height: 16px;
+}
+
+.preview-text {
+  width: 94%;
+}
+
+.preview-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+}
+
+@media screen and (min-width: 768px) {
+  .preview {
+    display: grid;
+    grid-template-areas: "ptitle ptitle ptitle" "plangs plangs ." "pimg pimg ptext" "pimg pimg ptext" "pimg pimg pbuttons";
+    gap: 0;
+    width: fit-content;
+    height: 89.253731343%;
+    min-height: 600px;
+    color: #091e42;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 5.373134328% 0%;
+  }
+
+  .preview-divtop {
+    grid-area: ptitle;
+    width: 100%;
+  }
+
+  .preview-title {
+    margin: 0;
+  }
+
+  .preview-langs {
+    grid-area: plangs;
+  }
+
+  .preview-img {
+    grid-area: pimg;
+    max-height: 448px;
+  }
+
+  .preview-text {
+    grid-area: ptext;
+    max-width: 360px;
+    grid-row-end: auto;
+  }
+
+  .preview-buttons {
+    grid-area: pbuttons;
+    justify-content: flex-start;
+  }
+
+  #button1.open-project {
+    margin-right: 10px;
   }
 }
