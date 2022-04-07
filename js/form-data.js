@@ -1,31 +1,28 @@
 const formReloads = document.querySelector('#form');
 
-const formData = {
+let formData = {
   name: '',
   email: '',
-  comments: '',
+  msg: '',
 };
 
-localStorage.setItem('form-data', JSON.stringify(formData));
-
-function itemListens(inputType) {
+function formInputListens(inputType) {
   formReloads.elements[inputType].addEventListener('input', () => {
-    localStorage[inputType] = formReloads.elements[inputType].value;
+    formData[inputType] = formReloads.elements[inputType].value;
+    localStorage.setItem('form-data', JSON.stringify(formData));
   });
 }
 
-function setItem(inputType) {
-  if (localStorage[inputType] !== '') {
-    formReloads.elements[inputType].value = localStorage[inputType];
-  }
+function setFormInput(inputType) {
+  formReloads.elements[inputType].value = JSON.parse(localStorage['form-data'])[inputType];
 }
 
 window.addEventListener('load', () => {
-  formData=JSON.parse(localStorage.getItem('form-data'));
-  itemListens('full-name');
-  itemListens('email');
-  itemListens('comments');
-  setItem('full-name');
-  setItem('email');
-  setItem('comments');
+  formData = JSON.parse(localStorage.getItem('form-data'));
+  formInputListens('name');
+  formInputListens('email');
+  formInputListens('msg');
+  setFormInput('name');
+  setFormInput('email');
+  setFormInput('msg');
 });
