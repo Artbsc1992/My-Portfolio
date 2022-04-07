@@ -1757,14 +1757,6 @@ ul.social-media2 {
   }
 }
 
-/* :focus {
-  outline: 4px solid transparent;
-}
-
-:focus:not(:focus-visible) {
-  outline: none;
-} */
-
 /* Menu dropdown */
 @media screen and (max-width: 768px) {
   nav.active {
