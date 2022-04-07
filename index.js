@@ -17,13 +17,23 @@ navItems.forEach((navItem) => {
 
 const cardsArr = [
   {
+    name: 'card1',
+    image: 'Img/P_img/photo1.png',
+    title: 'Professional Art Printing Data',
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standar',
+    buttons: {
+      langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+      other: [['See Live', 'https://artbsc1992.github.io/My-Portfolio/', 'Img/see-project-icon.svg'], ['See Source', 'https://github.com/Artbsc1992/My-Portfolio', 'Img/source-icon.svg']],
+    },
+  },
+  {
     name: 'card2',
     image: 'desktop-img/Project1.jpg',
     title: 'Professional Art Printing Data',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', '', 'Img/see-project-icon.svg'], ['See Source', '', 'Img/source-icon.svg']],
+      other: [['See Live', 'https://artbsc1992.github.io/My-Portfolio/', 'Img/see-project-icon.svg'], ['See Source', 'https://github.com/Artbsc1992/My-Portfolio', 'Img/source-icon.svg']],
     },
   },
   {
@@ -33,7 +43,7 @@ const cardsArr = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['CSS', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', '', 'Img/see-project-icon.svg'], ['See Source', '', 'Img/source-icon.svg']],
+      other: [['See Live', 'https://artbsc1992.github.io/My-Portfolio/', 'Img/see-project-icon.svg'], ['See Source', 'https://github.com/Artbsc1992/My-Portfolio', 'Img/source-icon.svg']],
     },
   },
   {
@@ -43,7 +53,7 @@ const cardsArr = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['python', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', '', 'Img/see-project-icon.svg'], ['See Source', '', 'Img/source-icon.svg']],
+      other: [['See Live', 'https://artbsc1992.github.io/My-Portfolio/', 'Img/see-project-icon.svg'], ['See Source', 'https://github.com/Artbsc1992/My-Portfolio', 'Img/source-icon.svg']],
     },
   },
   {
@@ -53,7 +63,7 @@ const cardsArr = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', '', 'Img/see-project-icon.svg'], ['See Source', '', 'Img/source-icon.svg']],
+      other: [['See Live', 'https://artbsc1992.github.io/My-Portfolio/', 'Img/see-project-icon.svg'], ['See Source', 'https://github.com/Artbsc1992/My-Portfolio', 'Img/source-icon.svg']],
     },
   },
   {
@@ -63,7 +73,7 @@ const cardsArr = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', '', 'Img/see-project-icon.svg'], ['See Source', '', 'Img/source-icon.svg']],
+      other: [['See Live', 'https://artbsc1992.github.io/My-Portfolio/', 'Img/see-project-icon.svg'], ['See Source', 'https://github.com/Artbsc1992/My-Portfolio', 'Img/source-icon.svg']],
     },
   },
   {
@@ -73,7 +83,7 @@ const cardsArr = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', '', 'Img/see-project-icon.svg'], ['See Source', '', 'Img/source-icon.svg']],
+      other: [['See Live', 'https://artbsc1992.github.io/My-Portfolio/', 'Img/see-project-icon.svg'], ['See Source', 'https://github.com/Artbsc1992/My-Portfolio', 'Img/source-icon.svg']],
     },
   },
 ];
@@ -122,7 +132,7 @@ const template = (obj) => {
     const [a, b, c] = btn;
     const img = document.createElement('img');
     button.appendChild(document.createTextNode(a));
-    button.setAttribute('href', b);
+    button.setAttribute('onclick', `window.location.href="${b}"`);
     img.setAttribute('src', c);
     button.appendChild(img);
     button.setAttribute('id', 'button1');
