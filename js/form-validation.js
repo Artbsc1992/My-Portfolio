@@ -37,18 +37,18 @@ function validateComments(comments, reqmsg, invmsg) {
 }
 
 form.addEventListener('submit', (event) => {
-  const nameValid = validateName(form.elements['full-name'].value, nameErrorMsg);
+  const nameValid = validateName(form.elements.name.value, nameErrorMsg);
   const emailValid = validateEmail(form.elements.email.value, emailReqMsg, emailInvMsg);
   const commentsValid = validateComments(form.elements.msg.value, commentsReqMsg, commentsInvMsg);
   if (nameValid[0] && emailValid[0] && commentsValid[0]) {
     smallMsg.innerHTML = 'Yay, thanks for contacting me!';
 
-    form.elements['full-name'].classList.remove('invalid-state');
+    form.elements.name.classList.remove('invalid-state');
     form.elements.email.classList.remove('invalid-state');
     form.elements.msg.classList.remove('invalid-state-comments');
     smallMsg.classList.remove('unsuccess');
 
-    form.elements['full-name'].classList.add('valid-state');
+    form.elements.name.classList.add('valid-state');
     form.elements.email.classList.add('valid-state');
     form.elements.msg.classList.add('valid-state-comments');
     smallMsg.classList.add('success');
@@ -61,11 +61,11 @@ form.addEventListener('submit', (event) => {
     ];
     if (!nameValid[0]) {
       smallMsg.innerHTML = isNameValid;
-      form.elements['full-name'].classList.remove('valid-state');
-      form.elements['full-name'].classList.add('invalid-state');
+      form.elements.name.classList.remove('valid-state');
+      form.elements.name.classList.add('invalid-state');
     } else {
-      form.elements['full-name'].classList.remove('invalid-state');
-      form.elements['full-name'].classList.add('valid-state');
+      form.elements.name.classList.remove('invalid-state');
+      form.elements.name.classList.add('valid-state');
       smallMsg.innerHTML = '';
     }
     if (!emailValid[0]) {
