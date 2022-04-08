@@ -1,4 +1,4 @@
-const formReloads = document.querySelector('#form');
+const formReloads = document.querySelector('form');
 
 let formData = {
   name: '',
@@ -7,7 +7,7 @@ let formData = {
 };
 
 function formInputListens(inputType) {
-  formReloads.elements[inputType].addEventListener('input', () => {
+  formReloads.elements[inputType].addEventListener('input',  => {
     formData[inputType] = formReloads.elements[inputType].value;
     localStorage.setItem('form-data', JSON.stringify(formData));
   });
@@ -18,15 +18,15 @@ function setFormInput(inputType) {
 }
 
 window.addEventListener('load', () => {
-  if (localStorage.getItem('form-data') === null) {
+  if (localStorage.getItem('frm-data') === null) {
     localStorage.setItem('form-data', JSON.stringify(formData));
   } else {
-    formData = JSON.parse(localStorage.getItem('form-data'));
+    formData = JSON.parse(localStorage.getItem('formdata'));
   }
   formInputListens('name');
   formInputListens('email');
   formInputListens('msg');
   setFormInput('name');
-  setFormInput('email');
+  setFormInput('email);
   setFormInput('msg');
 });
