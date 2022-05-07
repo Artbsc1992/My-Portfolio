@@ -10,6 +10,7 @@ body {
   width: 100vw;
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 
 .tool-bar {
@@ -283,9 +284,9 @@ ul {
 }
 
 .card1 {
-  width: auto;
-  display: grid;
-  grid-template-columns: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   margin-top: 72px;
 }
@@ -298,13 +299,12 @@ ul {
 
 .grid1 {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+  
 }
 
 #work-title {
   font-family: "Crete Round", serif;
-  padding-top: 90px;
   font-size: 40px;
   font-weight: normal;
 }
@@ -319,10 +319,8 @@ ul {
 }
 
 .img1 {
-  width: 370px;
-  padding-right: 9px;
-  height: 260px;
-  padding-top: 80px;
+  width: 100%;
+  height: auto;
 }
 
 .p1-title {
@@ -376,7 +374,7 @@ ul {
 
 .button1 {
   position: relative;
-  padding-left: 20px;
+  padding-left: 30px;
   margin-bottom: 50px;
 }
 
@@ -518,12 +516,12 @@ ul {
     width: auto;
     display: grid;
     grid-template-areas:
-      "work-title grid-line grid-line grid-line grid-line"
-      "photo1 photo1 photo1 p1-title p1-title"
-      "photo1 photo1 photo1 p1-text p1-text"
-      "photo1 photo1 photo1 list-1 list-1"
-      "photo1 photo1 photo1 button1 button1"
-      "photo1 photo1 photo1 . .";
+      "work-title grid-line grid-line"
+      "photo1 photo1 p1-title"
+      "photo1 photo1 p1-text"
+      "photo1 photo1 list-1"
+      "photo1 photo1 button1"
+      "photo1 photo1 .";
     height: 100%;
     margin-top: 72px;
     padding-top: 50px;
@@ -547,9 +545,7 @@ ul {
 
   .photo1 {
     grid-area: photo1;
-    width: auto;
     padding-bottom: 0;
-    margin-left: 114px;
   }
 
   .p1-title {
@@ -604,8 +600,9 @@ ul {
   .img1 {
     padding-top: 0;
     padding-right: 0;
-    width: 900px;
-    height: 500px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
   }
 
   .tags1 {

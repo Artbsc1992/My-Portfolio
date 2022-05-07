@@ -18,12 +18,12 @@ navItems.forEach((navItem) => {
 const cardsArr = [
   {
     name: 'card1',
-    image: 'Img/P_img/photo1.png',
-    title: 'Professional Art Printing Data',
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standar',
+    image: 'Img/P_img/app_screen_shoot_popup.png',
+    title: 'Todo list',
+    text: 'This app is a powerful tool! Here you can add any task you need to complete, and you can update and delete any task as you need!',
     buttons: {
-      langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', 'https://artbsc1992.github.io/My-Portfolio/', 'Img/see-project-icon.svg'], ['See Source', 'https://github.com/Artbsc1992/My-Portfolio', 'Img/source-icon.svg']],
+      langs: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
+      other: [['See Live', 'https://artbsc1992.github.io/todo-list/dist/', 'Img/see-project-icon.svg'], ['See Source', 'https://github.com/Artbsc1992/todo-list', 'Img/source-icon.svg']],
     },
   },
   {
